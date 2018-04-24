@@ -313,7 +313,8 @@ class CreditCardInput extends Component<Props, State> {
               }}
               autoComplete="cc-number"
               className={`credit-card-input ${inputClassName}`}
-              pattern="[0-9]*"
+              pattern="(\d*\s){3}\d*"
+              data-stripe="number"
               placeholder="Card number"
               type="text"
               component="input"
